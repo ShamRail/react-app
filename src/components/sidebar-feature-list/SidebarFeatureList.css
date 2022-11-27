@@ -1,0 +1,10 @@
+.sidebar__featured-posts {
+    padding-bottom: 40px;
+}
+
+.sidebar__article-info-title {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 18px;
+    line-height: 26px;
+}

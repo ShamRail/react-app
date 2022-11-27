@@ -1,0 +1,16 @@
+.sidebar__tags-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-family: 'PT Serif';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #666666;
+}
+
+.sidebar__tags-list a {
+    display: block;
+    padding: 6px 15px;
+    background-color: #F8F9FA;
+}

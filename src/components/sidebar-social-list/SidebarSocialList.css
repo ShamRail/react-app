@@ -1,0 +1,33 @@
+.sidebar__social {
+    padding-bottom: 70px;
+}
+
+.sidebar__social-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+}
+
+.sidebar__social-list li {
+    width: 88px;
+    height: 88px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F8F9FA;
+}
+
+.sidebar__social-list li img {
+    padding-bottom: 6px;
+    display: block;
+    margin: 0 auto;
+}
+
+.sidebar__social-list li p {
+    font-family: 'PT Sans';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: #999999;
+}

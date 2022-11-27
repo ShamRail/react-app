@@ -1,0 +1,19 @@
+.posts {
+    padding-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.article__seven-post {
+    width: 770px;
+}
+
+.article__seven-post-info {
+    padding: 23px 245px 0 31px;
+}
+
+.article__seven-post-topic {
+    padding-bottom: 9px;
+}

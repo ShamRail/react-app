@@ -1,0 +1,70 @@
+
+.sidebar__title {
+    padding: 15px 0;
+    margin-bottom: 20px;
+    width: 270px;
+    border: 1px solid #E5E5E5;
+    font-family: 'PT Serif';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    color: #171717;
+}
+
+.sidebar__info-author {
+    padding-bottom: 40px;
+}
+
+.sidebar__article {
+    margin-bottom: 30px;
+    width: 270px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar__article-content {
+    padding: 20px 20px 14px;
+}
+
+.sidebar__article-title {
+    padding-bottom: 4px;
+    font-family: 'PT Serif';
+    font-weight: 700;
+    text-align: center;
+    font-size: 16px;
+    line-height: 21px;
+    color: #171717;
+}
+
+.sidebar__article-subtitle {
+    padding-bottom: 14px;
+    font-family: 'PT Serif';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #B1B1B1;
+}
+
+.sidebar__article-text {
+    font-family: 'PT Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: #666666;
+}
+
+.sidebar__article-link {
+    padding: 12px 0;
+    display: block;
+    font-family: 'PT Serif';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #C9A96E;
+    border-top: 1px solid #E5E5E5;
+}

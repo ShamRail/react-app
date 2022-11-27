@@ -1,0 +1,27 @@
+.sidebar__categories {
+    padding-bottom: 56px;
+}
+
+.sidebar__categories-list {
+    font-family: 'PT Serif';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #666666;
+}
+
+.sidebar__categories-list li {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.sidebar__categories-list li:first-child {
+    padding-top: 0;
+}
+
+.sidebar__categories-list li:last-child {
+    border-bottom: none;
+}

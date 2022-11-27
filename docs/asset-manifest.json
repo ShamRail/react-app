@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-app/static/css/main.2b5a5c4e.css",
-    "main.js": "/react-app/static/js/main.5c22dbfe.js",
+    "main.js": "/react-app/static/js/main.bf05f342.js",
     "static/media/main-post.jpg": "/react-app/static/media/main-post.89b016b543861e7425f1.jpg",
     "static/media/7.jpg": "/react-app/static/media/7.fcd2102b331bf8fee187.jpg",
     "static/media/PTSans-Regular.eot": "/react-app/static/media/PTSans-Regular.8f15ebe62fa0cb9b1acd.eot",
@@ -39,10 +39,10 @@
     "static/media/arrow-next.svg": "/react-app/static/media/arrow-next.0a0ced1bf8dded268b5ab3e8f1dd2e63.svg",
     "static/media/arrow-older.svg": "/react-app/static/media/arrow-older.ff788cf37f776f20ba79dc5b7e04bba0.svg",
     "main.2b5a5c4e.css.map": "/react-app/static/css/main.2b5a5c4e.css.map",
-    "main.5c22dbfe.js.map": "/react-app/static/js/main.5c22dbfe.js.map"
+    "main.bf05f342.js.map": "/react-app/static/js/main.bf05f342.js.map"
   },
   "entrypoints": [
     "static/css/main.2b5a5c4e.css",
-    "static/js/main.5c22dbfe.js"
+    "static/js/main.bf05f342.js"
   ]
 }

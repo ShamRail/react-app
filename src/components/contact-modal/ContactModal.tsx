@@ -17,7 +17,7 @@ export const ContactModal = ({isOpen, onClose}: ContactModalProps) => {
 
     function submitForm() {
         sendFeedback();
-        onClose()
+        onClose();
     }
 
     return (

@@ -42,7 +42,7 @@ export const Pagination = ({onChange} : PaginationProps) => {
                     <span>OLDER POST</span>
                 </button>
                 <ul className="pagination__numbers">
-                    { pageList.map(n => <li onClick={_ => onChange(n)} style={{color: n == currentPage ? "red" : "black"}}>{n}</li>) }
+                    { pageList.map(n => <li onClick={_ => onChange(n)} style={{color: n == currentPage ? "#C9A96E" : "black"}}>{n}</li>) }
                 </ul>
                 <button className="pagination__btn pagination__btn_next" disabled={currentPage === 15} onClick={increasePage}>
                     <span>NEXT POST</span>

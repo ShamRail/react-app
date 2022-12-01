@@ -5,6 +5,7 @@ export const useFeedback = () => {
     const [fullName, setFullName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
+    const [phoneNumber, setPhoneNumber] = useState('');
 
     const sendFeedback = () => {
         fetch('https://jsonplaceholder.typicode.com/posts/1', {
@@ -12,7 +13,7 @@ export const useFeedback = () => {
             body: JSON.stringify({
                 id: 1,
                 title: fullName,
-                body: fullName + '\n' + email + '\n' + message,
+                body: fullName + ' ' + email + ' ' +  phoneNumber  + ' ' + message,
                 userId: 1
             }),
             headers: {
@@ -27,7 +28,7 @@ export const useFeedback = () => {
         fullName: fullName, setFullName: setFullName,
         email: email, setEmail: setEmail,
         message: message, setMessage: setMessage,
+        phoneNumber: phoneNumber, setPhoneNumber: setPhoneNumber,
         sendFeedback: sendFeedback
     }
-
 }

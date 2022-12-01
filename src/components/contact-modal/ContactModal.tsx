@@ -13,7 +13,7 @@ export const ContactModal = ({isOpen, onClose}: ContactModalProps) => {
         return null;
     }
 
-    const { fullName, setFullName, email, setEmail, message, setMessage, sendFeedback } = useFeedback();
+    const { setFullName, setEmail, setMessage, sendFeedback, setPhoneNumber } = useFeedback();
 
     function submitForm() {
         sendFeedback();
@@ -24,24 +24,47 @@ export const ContactModal = ({isOpen, onClose}: ContactModalProps) => {
         <div id={'modal'} className={'modal__overlay'}>
             <div className={'modal__wrapper'}>
                 <div className={'modal__container'}>
-                    <div className={'modal__header'}>
-                        <h1>Contact us</h1>
-                        <button className={'close__button'} onClick={onClose}>X</button>
-                    </div>
-                    <form className={'modal__body'}>
-                        <label>Full name<sup style={{color: 'red'}}>*</sup></label>
-                        <input name="full-name" type="text" value={fullName} onChange={event => setFullName(event.target.value)}/>
-                        <label>Email <sup style={{color: 'red'}}>*</sup></label>
-                        <input name="email" type="text" value={email} onChange={event => setEmail(event.target.value)}/>
-                        <label>Message <sup style={{color: 'red'}}>*</sup></label>
-                        <textarea name="message" rows={10} onChange={event => setMessage(event.target.value)} value={message}></textarea>
-                        <div style={{display: 'flex', justifyContent: 'space-around'}}>
-                            <button type="button" style={{width: '100%', margin: '5px'}} onClick={onClose}>Close</button>
-                            <button type="button" style={{width: '100%', margin: '5px'}} onClick={submitForm}>Submit</button>
+                    <div className="screen">
+                        <div className="screen-header">
+                            <div className="screen-header-left">
+                            </div>
+                            <div className="screen-header-right">
+                                <button onClick={onClose}>X</button>
+                            </div>
                         </div>
-                    </form>
+                        <div className="screen-body">
+                            <div className="screen-body-item left">
+                                <div className="app-title">
+                                    <span>CONTACT US</span>
+                                </div>
+                                <div className="app-contact">CONTACT INFO : +62 81 314 928 595</div>
+                            </div>
+                            <div className="screen-body-item">
+                                <div className="app-form">
+                                    <div className="app-form-group">
+                                        <input className="app-form-control" placeholder="NAME" onChange={event => setFullName(event.target.value)}/>
+                                    </div>
+                                    <div className="app-form-group">
+                                        <input className="app-form-control" placeholder="EMAIL" onChange={event => setEmail(event.target.value)}/>
+                                    </div>
+                                    <div className="app-form-group">
+                                        <input className="app-form-control" placeholder="CONTACT NO" onChange={event => setPhoneNumber(event.target.value)}/>
+                                    </div>
+                                    <div className="app-form-group message">
+                                        <input className="app-form-control" placeholder="MESSAGE" onChange={event => setMessage(event.target.value)}/>
+                                    </div>
+                                    <div className="app-form-group buttons">
+                                        <button className="app-form-button" onClick={onClose}>CANCEL</button>
+                                        <button className="app-form-button" onClick={submitForm}>SEND</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
+
     );
 }

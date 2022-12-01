@@ -23,6 +23,29 @@ const sevenTopicCss = {
     align: 'flex-start'
 }
 
+const topics = [
+    'Tourism', 'Jeans', 'City', 'Photography'
+];
+
+const dates = [
+    'January 1, 2019', 'February 2, 2019', 'March 3, 2019',
+    'April 4, 2019', 'May 5, 2019', 'June 6, 2019',
+    'July 7, 2019', 'August 8, 2019', 'September 9, 2019'
+];
+
+const authors = [
+    'Theocritus Maire',
+    'Carlu Òscar',
+    'Alois Şenay',
+    'Narayanan Pæga',
+    'Ankit Allycia',
+    'Máel Máedóc Vivi',
+    'Alisher Ülvi',
+    'Talgat Riccardo',
+    'Mathilda Gereon',
+    'Pétronille Uri'
+]
+
 export const PostList = () => {
 
     const imagePaths = [
@@ -52,6 +75,26 @@ export const PostList = () => {
         }
     }
 
+    const getRandomTopic = () => {
+        const index = Math.floor(Math.random() * topics.length);
+        return topics[index];
+    }
+
+    const getRandomDate = () => {
+        const index = Math.floor(Math.random() * dates.length);
+        return dates[index];
+    }
+
+    const getRandomAuthor = () => {
+        const index = Math.floor(Math.random() * authors.length);
+        return authors[index];
+    }
+
+    const getRandomSubstring = (str: string) => {
+        const index = Math.floor(Math.random() * 3);
+        return str.substring(index, Math.min(str.length, index + 7));
+    }
+
     return (
         <>
             <div className="posts">
@@ -59,11 +102,11 @@ export const PostList = () => {
                         if (index == 6) {
                             return <Post description={post.body}
                                          css={sevenTopicCss}
-                                         title={post.title.substring(0, 10)}
-                                         image={imagePaths[6]} topic={'Tourism'} date={'June 6, 2019'} author={'Rickie Baroch'}/>;
+                                         title={getRandomSubstring(post.title)}
+                                         image={imagePaths[6]} topic={getRandomTopic()} date={getRandomDate()} author={getRandomAuthor()}/>;
                         } else {
-                            return <Post title={post.title.substring(0, 10)}
-                                         image={getRandomImagePath()} topic={'Tourism'} date={'June 6, 2019'} author={'Rickie Baroch'} />;
+                            return <Post title={getRandomSubstring(post.title)}
+                                         image={getRandomImagePath()} topic={getRandomTopic()} date={getRandomDate()} author={getRandomAuthor()} />;
                         }
                     }
                 )}

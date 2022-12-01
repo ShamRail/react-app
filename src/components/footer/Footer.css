@@ -16,6 +16,10 @@
     justify-content: center;
 }
 
+.instagram__photos > img {
+    max-width: 15vw;
+}
+
 .footer {
     padding-top: 80px;
     padding-bottom: 30px;
